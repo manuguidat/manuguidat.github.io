@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Site ...</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-JLF/jCkY7bHTo/zx6lkagTWYkDyq1Kblvj5iyplc6l9/CR4ZaOMbap9wuSE3Tn3KavS3DWa6miEiqXsKxzZ1u8A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            /* Couleur de fond du header */
+            padding: 10px 0;
+            text-align: center;
+
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            /* Couleur du texte dans la navbar */
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        nav i {
+            margin-right: 5px;
+            /* Espacement entre l'icône et le texte */
+        }
+        /* Première Section Styles */
+        section {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 50px;
+        }
+
+        .right-block img {
+            max-width: 100%;
+            /* L'image occupe 100% de la largeur de son conteneur */
+            border-radius: 8px;
+            /* Bordure arrondie */
+        }
+
+        .left-block {
+            max-width: 600px;
+            text-align: left;
+        }
+
+        /* Media Query pour rendre le layout responsive */
+        @media (max-width: 768px) {
+            section {
+                flex-direction: column;
+                /* Les blocs passent en colonne sur les petits écrans */
+                padding: 20px;
+            }
+
+            .right-block img {
+                margin-bottom: 20px;
+                /* Espacement entre l'image et le texte */
+            }
+        }
+
+        /* Deuxième Section Styles */
+        section {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 50px;
+        }
+
+        .center-block img {
+            max-width: 100%;
+            /* L'image occupe 100% de la largeur de son conteneur */
+            max-height: 400px;
+            /* Spécifiez une hauteur maximale pour l'image */
+            border-radius: 8px;
+            /* Bordure arrondie */
+        }
+
+        .left-block,
+        .right-block {
+            max-width: 300px;
+            /* Ajustez la largeur selon vos besoins */
+            text-align: left;
+        }
+
+        .center-block {
+            flex-grow: 1;
+            /* Le bloc central prend autant d'espace que possible */
+            text-align: center;
+        }
+
+        /* Media Query pour rendre le layout responsive */
+        @media (max-width: 768px) {
+            section {
+                flex-direction: column;
+                /* Les blocs passent en colonne sur les petits écrans */
+                padding: 20px;
+            }
+
+            .right-block,
+            .left-block,
+            .center-block {
+                max-width: 100%;
+                /* Les blocs occupent la pleine largeur sur les petits écrans */
+                text-align: center;
+                margin-bottom: 20px;
+                /* Espacement entre les blocs sur les petits écrans */
+            }
+
+            .center-block img {
+                max-height: none;
+                /* Réinitialisez la hauteur maximale pour les petits écrans */
+            }
+        }
+
+        .killbill {
+            -webkit-font-smoothing: antialiased;
+    list-style: none;
+    color: #000;
+    box-sizing: border-box;
+    border: 0;
+    font: inherit;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+        }
+    </style>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#accueil"><i class="fas fa-home"></i> Accueil</a></li>
+                    <li><a href="#realisations"><i class="fas fa-cogs"></i> Mes Réalisations</a></li>
+                    <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+                    <li><a href="#autre"><i class="fas fa-star"></i> Autre</a></li>
+                </ul>
+            </nav>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-JLF/jCkY7bHTo/zx6lkagTWYkDyq1Kblvj5iyplc6l9/CR4ZaOMbap9wuSE3Tn3KavS3DWa6miEiqXsKxzZ1u8A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        </header>
+    <section id="accueil">
+        <div class="left-block">
+            <h2>Bienvenue sur mon site</h2>
+            <p>Quelques mots sur vous et votre parcours...</p>
+        </div>
+        <div class="right-block">
+            <img src="Journée_du_drapeau_Gabon_.jpg" alt="Votre Image">
+        </div>
+    </section>
+    <section id="realisations">
+        <div class="left-block">
+            <h2>Mes Réalisations</h2>
+            <p>Description de vos réalisations...</p>
+        </div>
+        <div class="center-block">
+            <img src="Capture d'écran 2023-06-22 114738.png" alt="Illustration de vos réalisations">
+        </div>
+        <div class="right-block">
+            <h2>Plus de détails</h2>
+            <p>Informations supplémentaires sur vos réalisations...</p>
+        </div>
+        <div class="right-block">
+            <h2>Plus de détails</h2>
+            <p class="killbill">Informations supplémentaires sur vos réalisations...</p>
+        </div>
+    </section>
+</body>
+</html>
