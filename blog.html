@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Accueil</title>
+</head>
+
+<body>
+    <header class="topbar">
+
+    <nav>
+        <a href="#accueil">Accueil</a>
+        <a href="#Réalisation.html">Mes Réalisations</a>
+        <a href="#contact.html">Contact</a>
+        <a href="#apropos.html">À Propos</a>
+    </nav>
+
+    <section id="accueil">
+        <h2>Section Accueil</h2>
+        <img src="votre-photo.jpg" alt="Votre Photo">
+        <p>Contenu de la section Accueil...</p>
+    </section>
+
+    <section id="realisations">
+        <h2>Mes Réalisations</h2>
+        <div class="carousel">
+            <div><img src="Minimalisme2.jpg" alt="Réalisation 1"></div>
+            <div><img src="realisation2.jpg" alt="Réalisation 2"></div>
+            <div><img src="realisation3.jpg" alt="Réalisation 3"></div>
+            <!-- Ajoutez plus d'éléments selon le nombre de réalisations -->
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Formulaire de contact ou informations de contact...</p>
+    </section>
+
+    <section id="apropos">
+        <h2>À Propos</h2>
+        <p>Informations sur le blog et son créateur...</p>
+    </section>
+
+    <!-- Inclure jQuery avant le script de Slick Carousel -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.carousel').slick({
+                dots: true,
+                infinite: true,
+                speed: 500,
+                slidesToShow: 1,
+                slidesToScroll: 1
+            });
+        });
+    </script>
+    <style>
+        .slick-slide img {
+            display: block;
+            margin: auto;
+        }>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #444;
+            padding: 10px;
+        }
+
+   
+    </style>
+</body>
+</html>
