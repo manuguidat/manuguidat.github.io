@@ -1,0 +1,131 @@
+ul, ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-size: 16px; 
+    margin: 0; 
+}
+
+header {
+    text-align: center;
+    padding: 10px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.401), white), url(Journée_du_drapeau_Gabon_.jpg);
+    background-position: center;
+    background-size: cover;
+    color: #fff; 
+}
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+nav{
+
+    padding: 10px;
+}
+
+
+nav a {
+    text-decoration: none;
+    color: #000000;
+    padding: 8px 12px;
+    border-radius: 12px;
+    flex: 1;
+    background-color: #ccc;
+}
+section a {
+    text-decoration: none;
+    color: #007BFF; 
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: 1px solid #007BFF; 
+    border-radius: 5px;
+}
+
+
+section a:hover,
+nav a:hover {
+    background-color: #007BFF; 
+    color: #fff; 
+}
+.flex-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.flex-me2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.pills{
+    border-radius: 20px;
+    background-color: #ccc;
+    padding: 8px;
+    margin: 5px;
+}
+.btn {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    max-width: 80px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#linkedIn {
+    max-width: 30px;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+    text-align: center;
+  }
+
+  .card-link {
+    text-decoration: none;
+    color: #007BFF;
+    display: block;
+    margin-top: 10px;
+  }
+
+  footer > p{
+    text-align: center;
+    padding: 10px 30px;
+
+  }
+
+body {
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    body > nav > ul > li{
+        margin: 15px 0;
+        font-size: large;
+    }
+}

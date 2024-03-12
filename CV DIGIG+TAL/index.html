@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prototype Portefolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Bienvenue sur Mon Portfolio Numérique</h1>
+      <p>
+        Cette section présente une sélection de projets que j'ai réalisés ce
+        semestre.
+      </p>
+      <nav>
+        <ul>
+          <li><a href="#projects">Mon Projects</a></li>
+          <li><a href="#resume">Voir Mon CV</a></li>
+          <li><a href="#skills">Compétences</a></li>
+          <li><a href="#about">Moi</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="projects" class="card">
+      <h2>Portfolio de Projets</h2>
+      <p>
+        Explorez la diversité de mon travail, des projets de gestion aux projets
+        de design.
+      </p>
+      <div class="flex-me2">
+        <a href="/tic-tac.html" class="btn card-link">Morpion</a>
+        <a
+          href=""
+          rel="noreferrer"
+          target="_blank"
+          class="btn card-link"
+          >Site Pro</a
+        >
+        <a
+          href=""
+          rel="noreferrer"
+          target="_blank"
+          class="btn card-link"
+          >Affiches</a
+        >
+        <a href="/blog.html" class="btn card-link">Mon blog</a>
+
+      </div>
+      <!-- Link to your projects section -->
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="card">
+      <h2>Curriculum Vitae</h2>
+      <p>
+        Ici vous pouvez retrouver un aperçu complet de mon parcours académique et
+        des compétences acquises.
+      </p>
+      <a
+        class="flex-me btn"
+        href="https://www.linkedin.com/in/emmanuel-florent-guidat-0b6088257/"
+        rel="noreferrer"
+        target="_blank"
+      >
+        <img id="linkedIn" src="Linkedin.svg" alt="" />
+        <span>LinkedIn</span>
+      </a>
+      <!-- Link to your resume section -->
+    </section>
+
+    <section id="about" class="card">
+      <h2>À Propos de Moi</h2>
+      <p>Immersion dans ma passion pour la gestion de projet et la communication.</p>
+      <a href="/about.html" class="btn card-link">Plus Sur Moi</a> 
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="card">
+      <h2>Compétences</h2>
+      <p>
+        En tant qu'étudiant chef de projet digital, voici mes compétences
+        principales :
+      </p>
+      <ul class="flex-me2">
+        <li class="pills">Gestion de projet </li>
+        <li class="pills">Maitre suite adobe</li>
+        <li class="pills">HTML</li>
+        <li class="pills">Javascript</li>
+        <li class="pills">Travail d'équipe</li>
+        <li class="pills">Connaissance réferencement </li>
+        <li class="pills">Redesign de site </li>
+      </ul>
+      <!-- Additional Skills or Certifications -->
+      <h3>Autres compétences et certifications :</h3>
+      <ul>
+        <!-- do this with an anchor element <li>HTML, CSS, JavaScript - Codecademy (Certification)</li> -->
+
+        <li>Bonne connaissance des codes des réseaux</li>
+        <li>Bonne capacité d'adaptation</li>
+      </ul>
+      <br />
+      <a
+        href="https://github.com/manuguidat/manuguidat.github.io"
+        rel="noreferrer"
+        target="_blank"
+        class="card-link btn"
+      >
+        GitHub
+      </a>
+    </section>
+    <footer>
+      <p>
+        Merci d'avoir exploré mon portfolio numérique. N'hésitez pas à me
+        contacter pour toute question sur Linked-In.
+      </p>
+    </footer>
+    <script>
+      function getRandomColor() {
+        const colors = ["#797ef6", "#4adede", "#1aa7ec", "#e63b60", "#ffe45c"];
+        return colors[Math.floor(Math.random() * colors.length)];
+      }
+
+      window.onload = function () {
+        const pills = document.querySelectorAll(".pills");
+        pills.forEach(function (pill) {
+          pill.style.backgroundColor = getRandomColor();
+        });
+      };
+    </script>
+  </body>
+</html>
